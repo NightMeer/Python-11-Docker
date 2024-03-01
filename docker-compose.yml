@@ -1,0 +1,14 @@
+services:
+  python:
+    build:
+        context: .
+    volumes:
+      - ./src:/src
+    environment:
+      - FILENAME=main.py
+      - ADDITIONAL_COMMAND=
+      #Space separiert
+      - PACKAGES=PyYAML schedule requests==2.28.1
+      #Proxy
+      - http_proxy=http://webproxy.bs.ptb.de:8080
+      - https_proxy=http://webproxy.bs.ptb.de:8080

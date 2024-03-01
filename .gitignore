@@ -1,0 +1,6 @@
+src/venv
+src/__pycache__
+src/*.log
+src/docker-requirements.txt
+__pycache__
+.idea
